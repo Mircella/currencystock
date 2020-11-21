@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5430/currencystock
+    driver-class-name: org.postgresql.Driver
+    username: currencystock
+    password: currencystock
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        temp.use_jdbc_metadata_defaults: false
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+  jdbc:
+    template:
+      fetch-size: 10
+      max-rows: 10
+
+server:
+  port: 8776
+
+swagger:
+  enabled: true
+  host: localhost
+  scheme: http
+  title: CurrencyStock
+  description: CurrencyStock
