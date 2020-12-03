@@ -4,19 +4,9 @@ services:
     build: .
     image: currencystock-postgresql
     container_name: currencystock-postgresql
-    volumes:
-    - currencystock-postgresql-data:/var/lib/postgresql/data
     ports:
       - 5430:5432
     networks:
       - currencystock
 networks:
   currencystock:
-
-volumes:
-  currencystock-postgresql-data:
-    driver: local
-    driver_opts:
-      type: 'none'
-      o: 'bind'
-      device: '${PWD}/data'

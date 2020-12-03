@@ -1,7 +1,9 @@
 package net.vizja.currencystock.api
 
-import net.vizja.currencystock.accounts.CreateAccountDetails
-import net.vizja.currencystock.accounts.AccountService
+import net.vizja.currencystock.api.responses.AccountCreatedResponse
+import net.vizja.currencystock.api.responses.AccountResponse
+import net.vizja.currencystock.exchangeaccount.accounts.CreateAccountDetails
+import net.vizja.currencystock.exchangeaccount.accounts.AccountService
 import org.springframework.web.bind.annotation.*
 import java.util.*
 
